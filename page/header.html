@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!--font awesome-->
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <h1><i class="fa-solid fa-paw"></i> HUELLAS SOLIDARIAS</h1>
+        <ul>
+          <li><a routerLink="/inicio" routerLinkActive="active">Inicio</a></li>
+          <!--Conectar con otro componente-->
+
+          <!--Item Nosotros-->
+          <li class="submenu" [class.open]="openMenu === 'nosotros'">
+            <!--Item con el submenu-->
+            <a href="#" (click)="menu($event, 'nosotros')"
+              >Nosotros <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="submenu-items">
+              <!--Lo que contiene el submenu-->
+              <li><a routerLink="/mision-vision">Misión y Visión</a></li>
+              <li><a routerLink="/voluntariados">Voluntariados</a></li>
+              <li><a routerLink="/noticias">Noticias</a></li>
+            </ul>
+          </li>
+
+          <!--Item Adopciones-->
+          <li class="submenu" [class.open]="openMenu === 'adopciones'">
+            <a href="#" (click)="menu($event, 'adopciones')"
+              >Adopciones <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="submenu-items">
+              <li><a routerLink="/proceso-adopcion">Proceso de adopción</a></li>
+              <li><a routerLink="/apadrinamiento">Apadrinamiento</a></li>
+              <li><a routerLink="/adoptables">Adoptables</a></li>
+            </ul>
+          </li>
+
+          <!--Item Contacto-->
+          <li><a routerLink="/contacto">Contáctanos</a></li>
+
+          <!--Item Donar-->
+          <li>
+            <a routerLink="/donar" class="btn-donar"
+              ><i class="fa-solid fa-heart"></i><span>DONAR</span></a
+            >
+          </li>
+
+          <!--Icono user-->
+          <li>
+            <a routerLink="/login"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

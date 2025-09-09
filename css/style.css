@@ -1,0 +1,300 @@
+/*Modulo Header*/
+header {
+  background: #ffffff;
+  padding: 0.9rem 3rem;
+}
+
+/*Navegación menu*/
+nav {
+  display: flex; /*Organización en fila*/
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Titulo*/
+nav h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/*Lista del menu*/
+nav ul {
+  list-style: none; /*Sin viñetas*/
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/*Pocisión del submenu*/
+nav ul li {
+  position: relative;
+}
+
+/*Estilo del menu en general*/
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  padding: 6px 10px;
+  display: block;
+  transition: background 0.3s;
+}
+
+/*Efecto al pasar mouse*/
+nav > ul > li > a:hover {
+  color: inherit; /*No cambia el color que ya tiene*/
+  text-decoration: underline;
+  text-decoration-color: #000000;
+}
+
+/*Submenu*/
+.submenu .submenu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /*Aparece encim de otros elementos*/
+}
+
+/*open: muestra submenu*/
+.submenu.open .submenu-items {
+  display: block;
+}
+
+/*Efecto al pasar mouse del submenu*/
+.submenu .submenu-items li a:hover {
+  background: #D9EEFF;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+}
+
+/*Donar*/
+.btn-donar {
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  color: #000;
+  position: relative;
+}
+
+/*Icono corazón*/
+.btn-donar i {
+  color: #D9EEFF;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(13%, -60%);
+  z-index: 0; /*Corazón detras de la letra*/
+}
+
+.btn-donar span {
+  position: relative;
+  z-index: 1; /*Letra encima de corazón*/
+}
+
+/*Icono user*/
+li a i.fa-user {
+  cursor: pointer;
+}
+
+/*Modulo footer*/
+/*Estilo general*/
+.footer {
+  width: 100%;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9EEFF;
+  padding: 30px 50px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/*Logo y redes*/
+.footer-logo {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+}
+
+/*Imagen*/
+.footer-logo img {
+  max-width: 200px;
+  margin-bottom: 50px;
+}
+
+.footer-logo h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/*Iconos*/
+.redes a {
+  margin: 0 8px;
+  font-size: 20px; /*Tamaño del icono*/
+  color: #000000;
+  transition: color 0.3s; /*Animación*/
+}
+
+.redes a:hover {
+  color: #0077cc;
+}
+
+/*Menu*/
+.footer-menu {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-menu h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-menu ul {
+  list-style: none; /*Quita viñetas*/
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 6px;
+}
+
+.footer-menu a {
+  color: #000000;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.footer-menu a:hover {
+  color: #0077cc;
+}
+
+/*Contacto*/
+.footer-contacto {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-contacto h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-contacto p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-contacto i {
+  margin-right: 8px;
+  color: #000000;
+}
+
+/*Derecho de autor*/
+.footer-inferior {
+  text-align: center;
+  padding: 12px;
+  background-color: #ffffff;
+  font-size: 13px;
+  color: #000000;
+  border-top: 1px solid #ffffff;
+}
+
+/*Para enlace de Bogota*/
+.footer-contacto a {
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.footer-contacto a:hover {
+  color: #0077cc;
+}
+ /* Responsive */
+    @media (max-width: 750px) {
+      .registro {
+        flex-direction: column;
+        text-align: center;
+    }
+  }
+
+  /*Modulo Registro*/
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem; 
+  color: #000;
+}
+
+
+
+.registro {
+  background-color: #FFF8E7;
+  border-radius: 12px;
+  width: 350px;
+}
+ 
+.formulario input {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+ 
+.formulario input:focus {
+  border-color: #FFFFFF;
+  box-shadow: none;
+  border-radius: 6px;
+}
+ 
+.gato-img {
+  right: -329px;   /* saca el gato hacia la derecha */
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 450px;
+}
+
+    /* Responsive */
+    @media (max-width: 750px) {
+      .registro {
+        flex-direction: column;
+        text-align: center;
+    }
+}
