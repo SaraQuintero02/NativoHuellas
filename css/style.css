@@ -1,300 +1,295 @@
-/*Modulo Header*/
-header {
-  background: #ffffff;
-  padding: 0.9rem 3rem;
-}
-
-/*Navegación menu*/
-nav {
-  display: flex; /*Organización en fila*/
-  justify-content: space-between;
-  align-items: center;
-}
-
-/*Titulo*/
-nav h1 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/*Lista del menu*/
-nav ul {
-  list-style: none; /*Sin viñetas*/
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-/*Pocisión del submenu*/
-nav ul li {
-  position: relative;
-}
-
-/*Estilo del menu en general*/
-nav ul li a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
-  padding: 6px 10px;
-  display: block;
-  transition: background 0.3s;
-}
-
-/*Efecto al pasar mouse*/
-nav > ul > li > a:hover {
-  color: inherit; /*No cambia el color que ya tiene*/
-  text-decoration: underline;
-  text-decoration-color: #000000;
-}
-
-/*Submenu*/
-.submenu .submenu-items {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #ffffff;
-  border: 1px solid #ffffff;
-  min-width: 180px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: 1000; /*Aparece encim de otros elementos*/
-}
-
-/*open: muestra submenu*/
-.submenu.open .submenu-items {
-  display: block;
-}
-
-/*Efecto al pasar mouse del submenu*/
-.submenu .submenu-items li a:hover {
-  background: #D9EEFF;
-  cursor: pointer;
-  color: #000000;
-  text-decoration: none;
-}
-
-/*Donar*/
-.btn-donar {
-  font-weight: bold;
-  display: flex;
-  align-items: flex-start;
-  gap: 2px;
-  color: #000;
-  position: relative;
-}
-
-/*Icono corazón*/
-.btn-donar i {
-  color: #D9EEFF;
-  font-size: 1.5em;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translate(13%, -60%);
-  z-index: 0; /*Corazón detras de la letra*/
-}
-
-.btn-donar span {
-  position: relative;
-  z-index: 1; /*Letra encima de corazón*/
-}
-
-/*Icono user*/
-li a i.fa-user {
-  cursor: pointer;
-}
-
-/*Modulo footer*/
-/*Estilo general*/
-.footer {
-  width: 100%;
-  color: #000000;
-  margin-top: 40px;
-}
-
-.footer-contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #D9EEFF;
-  padding: 30px 50px;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-/*Logo y redes*/
-.footer-logo {
-  flex: 1;
-  min-width: 220px;
-  text-align: center;
-}
-
-/*Imagen*/
-.footer-logo img {
-  max-width: 200px;
-  margin-bottom: 50px;
-}
-
-.footer-logo h3 {
-  margin: 10px 0 5px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.footer-logo p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  color: #000000;
-}
-
-/*Iconos*/
-.redes a {
-  margin: 0 8px;
-  font-size: 20px; /*Tamaño del icono*/
-  color: #000000;
-  transition: color 0.3s; /*Animación*/
-}
-
-.redes a:hover {
-  color: #0077cc;
-}
-
-/*Menu*/
-.footer-menu {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer-menu h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.footer-menu ul {
-  list-style: none; /*Quita viñetas*/
-  padding: 0;
-}
-
-.footer-menu li {
-  margin-bottom: 6px;
-}
-
-.footer-menu a {
-  color: #000000;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-.footer-menu a:hover {
-  color: #0077cc;
-}
-
-/*Contacto*/
-.footer-contacto {
-  flex: 1;
-  min-width: 220px;
-}
-
-.footer-contacto h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.footer-contacto p {
-  margin: 6px 0;
-  font-size: 14px;
-}
-
-.footer-contacto i {
-  margin-right: 8px;
-  color: #000000;
-}
-
-/*Derecho de autor*/
-.footer-inferior {
-  text-align: center;
-  padding: 12px;
-  background-color: #ffffff;
-  font-size: 13px;
-  color: #000000;
-  border-top: 1px solid #ffffff;
-}
-
-/*Para enlace de Bogota*/
-.footer-contacto a {
-  color: #000000;
-  transition: color 0.3s;
-}
-
-.footer-contacto a:hover {
-  color: #0077cc;
-}
- /* Responsive */
-    @media (max-width: 750px) {
-      .registro {
-        flex-direction: column;
-        text-align: center;
-    }
-  }
-
-  /*Modulo Registro*/
-  *{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-  background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-h2 {
+.hero {
+  background: #D9EEFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 11%;
+  position: relative;
+  overflow: hidden; /*Oculta contenido que sobresalga del contenedor*/
+}
+
+/*Texto*/
+.hero .texto {
+  width: 45%;
+  text-align: left;
+}
+
+.hero .texto h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.hero .texto p {
+  font-size: 1.1rem;
+  color: #000000;
+  margin: 0;
+}
+
+/*Imagen perro y gato*/
+.hero .imagen {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .imagen img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*Efecto curva*/
+.wave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.wave path {
+  fill: #ffffff;
+  stroke: none;
+}
+
+/*Reportes*/
+.reportes {
   text-align: center;
-  margin-bottom: 1rem; 
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.reportes h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.reportes .subtexto {
+  font-size: 1.1rem;
   color: #000;
+  margin-bottom: 50px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-
-
-.registro {
-  background-color: #FFF8E7;
-  border-radius: 12px;
-  width: 350px;
+.reportes-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  flex-wrap: wrap;
 }
- 
-.formulario input {
+
+/*Imagen y botón*/
+.reporte-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.reporte-card button {
+  position: relative;
+  z-index: 10;
+}
+
+/*Caja de la imagen*/
+.img-box {
+  margin-top: 50px;
+  background: #FFFAE7;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 150px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Ajuste individual de cada imagen*/
+.reporte-card.abandonado .img-box img {
+  width: 280px;
+  top: 62px;
+  position: relative;
+}
+
+.reporte-card.maltratado .img-box img {
+  width: 280px;
+  top: 15px;
+  position: relative;
+}
+
+.reporte-card.encerrado .img-box img {
+  width: 290px;
+  top: 29px;
+  position: relative;
+}
+
+/*Botones generales*/
+section.reportes .reportes-contenedor .reporte-card button {
+  margin-top: 80px;
+  background: #FFFAE7 !important;
   border: none;
-  border-bottom: 1px solid #000;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
-}
- 
-.formulario input:focus {
-  border-color: #FFFFFF;
-  box-shadow: none;
-  border-radius: 6px;
-}
- 
-.gato-img {
-  right: -329px;   /* saca el gato hacia la derecha */
-  top: 50%;
-  transform: translateY(-50%);
-  max-height: 450px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1.0rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-    /* Responsive */
-    @media (max-width: 750px) {
-      .registro {
-        flex-direction: column;
-        text-align: center;
-    }
+section.reportes .reportes-contenedor .reporte-card button:hover {
+  background: #c3ba99 !important;
+  transform: translateY(-3px);
 }
+
+/*Sección Estadística*/
+.estadistica {
+  display: flex;
+  justify-content: space-around; /*distribuye los 3 bloques*/
+  align-items: center;
+  text-align: center;
+  padding: 150px 20px;
+  background-color: #D9EEFF;
+  margin-top: 50px; 
+}
+
+.estadistica .dato {
+  flex: 1;
+}
+
+.estadistica i {
+  font-size: 50px; /*tamaño del ícono*/
+  color: #000; 
+  margin-bottom: 10px;
+}
+
+.estadistica h3 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.estadistica p {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+/*Sección informativa*/
+.informativa {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.informativa h2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: center; 
+}
+
+.informativa h2 i {
+  font-size: 2rem;
+  color: #000; 
+}
+
+.informativa p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #000000;
+  text-align: center; 
+  margin-top: 30px;
+}
+
+/*Galeria de 4 columnas*/
+.informativa .galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.informativa .galeria img {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+.aliados h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.aliados .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 80px;
+}
+
+.aliados .logos a {
+  flex: 1 1 120px;  /*cada logo el mismo tamaño */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aliados .logos img {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.aliados .logos img:hover {
+  transform: scale(1.1);
+}
+
+/*Separación extra con el footer*/
+.aliados {
+  margin-bottom: 20rem;
+}
+
+
+

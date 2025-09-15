@@ -1,67 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huellas</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <!--font awesome-->
+    <title>Header</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/><!--Fuente-->
   </head>
+
   <body>
     <header id="header">
       <nav>
         <h1><i class="fa-solid fa-paw"></i> HUELLAS SOLIDARIAS</h1>
         <ul>
-          <li><a routerLink="/inicio" routerLinkActive="active">Inicio</a></li>
-          <!--Conectar con otro componente-->
+          <li><a href="index.html">Inicio</a></li>
 
           <!--Item Nosotros-->
-          <li class="submenu" [class.open]="openMenu === 'nosotros'">
-            <!--Item con el submenu-->
-            <a href="#" (click)="menu($event, 'nosotros')"
-              >Nosotros <i class="fa-solid fa-caret-down"></i
-            ></a>
-            <ul class="submenu-items">
-              <!--Lo que contiene el submenu-->
-              <li><a routerLink="/mision-vision">Misión y Visión</a></li>
-              <li><a routerLink="/voluntariados">Voluntariados</a></li>
-              <li><a routerLink="/noticias">Noticias</a></li>
+          <li class="submenu">
+            <a href="#" data-menu="nosotros">Nosotros <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="submenu-items" data-submenu="nosotros">
+              <li><a href="misionVision.html">Misión y Visión</a></li>
+              <li><a href="voluntarios.html">Voluntariados</a></li>
+              <li><a href="noticias.html">Noticias</a></li>
             </ul>
           </li>
 
           <!--Item Adopciones-->
-          <li class="submenu" [class.open]="openMenu === 'adopciones'">
-            <a href="#" (click)="menu($event, 'adopciones')"
-              >Adopciones <i class="fa-solid fa-caret-down"></i
-            ></a>
-            <ul class="submenu-items">
-              <li><a routerLink="/proceso-adopcion">Proceso de adopción</a></li>
-              <li><a routerLink="/apadrinamiento">Apadrinamiento</a></li>
-              <li><a routerLink="/adoptables">Adoptables</a></li>
+          <li class="submenu">
+            <a href="#" data-menu="adopciones">Adopciones <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="submenu-items" data-submenu="adopciones">
+              <li><a href="procesoadopcion.html">Proceso de Adopción</a></li>
+              <li><a href="adoptables.html">Adoptables</a></li>
             </ul>
           </li>
 
           <!--Item Contacto-->
-          <li><a routerLink="/contacto">Contáctanos</a></li>
+          <li><a href="./contacto.html">Contáctanos</a></li>
 
           <!--Item Donar-->
-          <li>
-            <a routerLink="/donar" class="btn-donar"
-              ><i class="fa-solid fa-heart"></i><span>DONAR</span></a
-            >
-          </li>
+          <li><a href="./donar.html" class="btn-donar"><i class="fa-solid fa-heart"></i><span>DONAR</span></a></li>
 
-          <!--Icono user-->
-          <li>
-            <a routerLink="/login"><i class="fa-solid fa-user"></i></a>
-          </li>
+          <!--Icono usuario-->
+          <li><a href="./login.html" aria-label="Login"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </nav>
     </header>
+    <script src="../dist/main.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,129 @@
+/*Fuente general*/
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+/*Header*/
+header {
+  background: #ffffff;
+  padding: 1.5rem 3rem;
+}
+
+/*Navegación menu principal*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Titulo*/
+nav h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+  margin: 0;
+}
+
+/*Menu principal*/
+nav ul {
+  list-style: none; /*Elimina viñetas*/
+  display: flex; 
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative; /*Submenus completos respecto al item principal*/
+}
+
+/*Submenus enlace*/
+nav ul li a {
+  text-decoration: none; /*Elimina subrayado*/
+  font-size: 1.1rem;
+  color: #000000;
+  padding: 6px 10px;
+  display: block;
+  transition: color 0.3s, background 0.3s;
+}
+
+/*Subrayado al pasar raton*/
+nav > ul > li > a:hover {
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+/*Submenu*/
+.submenu .submenu-items {
+  display: none; /*Oculto hasta hacel click*/
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+/*Muestra submenu cuando tenga clase open*/
+.submenu.open .submenu-items {
+  display: block;
+}
+
+/*Estilo sel submenu*/
+.submenu .submenu-items li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000000;
+  padding: 8px 12px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/*Al pasar raton en el submenu*/
+.submenu .submenu-items li a:hover {
+  background: #D9EEFF;   
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+/*Botón de donar*/
+.btn-donar {
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+  color: #000;
+  position: relative;
+}
+
+/*Icono de corazón*/
+.btn-donar i { 
+  color: #D9EEFF;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(13%, -60%);
+  z-index: 0;
+}
+
+.btn-donar span {
+  position: relative;
+  z-index: 1;
+}
+
+/*Icono de usuario*/
+li a i.fa-user {
+  cursor: pointer;
+  font-size: 1.8rem;  
+}

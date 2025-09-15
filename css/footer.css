@@ -1,0 +1,139 @@
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+/*Contenedor general*/
+.footer {
+  width: 100%;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.footer-contenido {
+  display: flex; /*Fila*/
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9EEFF;
+  padding: 30px 50px;
+  flex-wrap: wrap; 
+  gap: 30px;
+}
+
+/*Logo y redes*/
+.footer-logo {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+/*Imagen*/
+.footer-logo img {
+  max-width: 300px;
+  position: absolute;
+  top: -373px; /*Queda en la parte superior*/
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*Texto logo*/
+.footer-logo h3 {
+  margin: 60px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+/*Iconos redes sociales*/
+.redes a {
+  margin: 0 8px;
+  font-size: 20px; /*Tamaño icono*/
+  color: #000000;
+  transition: color 0.3s; /*Animación*/
+}
+
+.redes a:hover {
+  color: #0077cc;
+}
+
+/*Menu*/
+.footer-menu {
+  flex: 1;
+  min-width: 200px;
+  margin-left: 210px; /
+}
+
+.footer-menu h4 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-menu ul {
+  list-style: none; /*Quita viñetas*/
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 6px;
+}
+
+.footer-menu a {
+  color: #000000;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-decoration: none; 
+}
+
+.footer-menu a:hover {
+  color: #0077cc;
+}
+
+/*Contacto*/
+.footer-contacto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-contacto h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-contacto p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.footer-contacto i {
+  margin-right: 8px;
+  color: #000000;
+}
+
+/*Derechos de autor*/
+.footer-inferior {
+  text-align: center;
+  padding: 12px;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  color: #000000;
+  border-top: 1px solid #ffffff;
+}
+
+/*Enlace Bogota*/
+.footer-contacto a {
+  color: #000000;
+  transition: color 0.3s;
+}
+
+.footer-contacto a:hover {
+  color: #0077cc;
+}

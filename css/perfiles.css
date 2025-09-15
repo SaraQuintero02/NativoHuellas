@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  background: #fff;
+  color: #000;
+}
+
+.page {
+  padding: 250px 6%;
+  display: flex; 
+  justify-content: flex-start;
+  position: relative;
+  padding-top: 100px;
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+}
+
+/*Contenedor del perfil*/
+.perfil-contenedor {
+  background: #FFFAE7;
+  padding: 2rem 2rem 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 500px;
+  position: relative;
+  text-align: center;
+}
+
+/*Foto de perfil*/
+.perfil-foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;/*Circulo*/
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: absolute;/*Flota sobre el contenedor de pefil*/
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.perfil-contenedor h2 {
+  margin-top: 70px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/*Información de usuario*/
+.perfil-info {
+  text-align: left;
+  padding: 0 8px;
+}
+
+.perfil-info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.perfil-acciones {
+  text-align: center;
+  margin-top: 1.2rem;
+}
+
+/*Botón editar*/
+.perfil-acciones button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  background: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.25s, color 0.25s;
+}
+
+.perfil-acciones button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/*Contenedor editar perfil*/
+.editor-perfil {
+  display: none; /*Oculto por defecto*/
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(280px); 
+  width: 400px;
+  background: #FFFAE7;
+  padding: 1.6rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.editor-perfil h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.editor-perfil label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 500;
+}
+
+/*Formulario dentro del editor de perfil*/
+.editor-perfil input,
+.editor-perfil select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.editor-perfil button {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.editor-perfil button:hover {
+  background: #000;
+  color: #FFFAE7;;
+}
+
+/*Botón cerrar*/
+.editor-perfil .cerrar {
+  float: right;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-top: -8px;
+}

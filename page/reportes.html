@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportes</title>
+    <link rel="stylesheet" href="../css/reportes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
+  </head>
+  
+  <body>
+    <div id="header"></div>
+    <section class="form-reporte">
+      <h2>ALERTA ANIMAL</h2>
+      <form>
+        <label for="tipo">Tipo de reporte:</label>
+        <select id="tipo" name="tipo">
+          <option value="abandonado">Abandonado</option>
+          <option value="maltratado">Maltratado</option>
+          <option value="encerrado">Encerrado</option>
+        </select>
+
+        <label for="ubicacion">Ubicación:</label>
+        <input
+          type="text"
+          id="ubicacion"
+          name="ubicacion"
+          placeholder="Dirección o lugar donde se encuentra el animal"
+          required
+        />
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" readonly />
+
+        <label for="descripcion">Descripción:</label>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          placeholder="Descripción del estado del animal"
+        ></textarea>
+
+        <button type="submit">Enviar reporte</button>
+      </form>
+    </section>
+
+    <div id="footer"></div>
+    <script src="../dist/reportes.js" type="module"></script>
+  </body>
+</html>

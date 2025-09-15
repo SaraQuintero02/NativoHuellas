@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfiles</title>
+    <link rel="stylesheet" href="../css/perfiles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/><!--Fuente-->
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <main class="page">
+      <section class="perfil">
+        <div class="perfil-contenedor">
+          <img class="perfil-foto" src="../assets/img/imagen_predeterminada.png" alt="foto predeterminada"/>
+          <h2>MI PERFIL</h2>
+
+          <!--Información del perfil-->
+          <div class="perfil-info">
+            <p><strong>Nombre:</strong> <span id="nombre">Luisa Quintero</span></p>
+            <p><strong>Correo:</strong> <span id="correo">Luisaquin@gmail.com</span></p>
+            <p><strong>Teléfono:</strong> <span id="telefono">3043018954</span></p>
+            <p><strong>Fecha de Registro:</strong><span id="fecha_registro">2025-09-13</span></p>
+            <p><strong>Tipo de Usuario:</strong><span id="tipo_usuario">Voluntario</span></p>
+          </div>
+          <div class="perfil-acciones" aria-label="Editar perfil"><button id="editarPerfil">Editar Perfil</button></div>
+        </div>
+
+        <!--Editar perfil-->
+        <aside id="editorPerfil" class="editor-perfil" aria-hidden="true">
+          <span class="cerrar" title="Cerrar">&times;</span> <!--Botón para cerrar la edición-->
+          <h3>EDITAR PERFIL</h3>
+          <form id="formEditar">
+            <label for="nombreInput">Nombre:</label>
+            <input
+              type="text"
+              id="nombreInput"
+              name="nombre"
+              placeholder="Edita tu nombre aquí"
+            />
+
+            <label for="correoInput">Correo:</label>
+            <input
+              type="email"
+              id="correoInput"
+              name="correo"
+              placeholder="Edita tu correo aquí"
+            />
+
+            <label for="telefonoInput">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefonoInput"
+              name="telefono"
+              placeholder="Edita tu número aquí"
+            />
+
+            <label for="tipoInput">Tipo de Usuario:</label>
+            <select id="tipoInput" name="tipo">
+              <option value="voluntario">Voluntario</option>
+              <option value="donante">Donante</option>
+              <option value="adoptante">Adoptante</option>
+            </select>
+
+            <button type="submit">Guardar cambios</button>
+          </form>
+        </aside>
+      </section>
+    </main>
+    
+    <div id="footer"></div>
+    <script type="module" src="../dist/perfiles.js"></script>
+  </body>
+</html>
