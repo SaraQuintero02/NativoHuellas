@@ -1,0 +1,136 @@
+/* Sección adoptables */
+.hero {
+  background: #D9D7F1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 11%;
+  position: relative;
+  overflow: hidden; /*Oculta contenido que sobresalga del contenedor*/
+}
+
+/*Texto*/
+.hero .texto {
+  width: 45%;
+  text-align: left;
+}
+
+.hero .texto h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.hero .texto p {
+  font-size: 1.1rem;
+  color: #000000;
+  margin: 0;
+}
+
+/*Imagen perro y gato*/
+.hero .imagen {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .imagen img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/*Efecto curva*/
+.wave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  line-height: 0;
+  pointer-events: none;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+
+.wave path {
+  fill: #ffffff;
+  stroke: none;
+}
+
+.adoptable {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  margin-block-end: 20%;
+}
+
+.adoptable h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.adoptable p {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Grid */
+.grid-adoptables {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  
+}
+
+/* Tarjetas */
+.adopt {
+  background-color: #fef8e7; /* beige suave */
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Imagen dentro de la tarjeta */
+.adopt img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Nombre y edad */
+.adopt h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlace "Ver más" */
+.adoptable a {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  transition: 0.2s;
+}
+
+.adoptable a:hover {
+  color: #555;
+  border-color: #555;
+}
+

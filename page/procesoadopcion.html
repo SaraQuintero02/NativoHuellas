@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huella solidarias</title>
+    <link rel="stylesheet" href="../css/procesoAdopcion.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huellas Solidarias</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--font awesome-->
-</head>
+  <body>
+    <div id="header"></div>
 
-<body>
-  <!--Encabezado-->
-  <header>
-    <nav>
-      <h1><i class="fa-solid fa-paw"></i> HUELLAS SOLIDARIAS</h1>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <!--Submenu-->
-        <li class="submenu">
-          <a href="">Nosotros▼</a>
-          <ul class="categoria">
-            <li><a href="misionVision.html">Misión y Visión</a></li>
-            <li><a href="voluntarios.html">Voluntarios</a></li>
-            <li><a href="noticias.html">Noticias</a></li>
-          </ul>
-        </li>
-        <!--Submenu2-->
-        <li class="submenu2">
-          <a href="">Adopciones▼</a>
-          <ul class="categorias">
-            <li><a href="procesoadopcion.html">Proceso de adopciòn </a></li>
-            <li><a href="apadrinamiento.html">Apadrinamiento</a></li>
-            <li><a href="adoptables.html">Adoptables</a></li>
-          </ul>
-        </li>
-        <li><a href="contacto.html">Contactanos</a></li>
-        <li><a href="#"><img src="../assets/img/corazon.png" alt="corazon" width="80" height="80">DONA</a></li>
-        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-      </ul>
-    </nav>
-</header>
+    <!--Sección principal-->
+    <main id="inicio">
+      <section class="hero">
+        <div class="texto">
+          <h2>PROCESO DE ADOPCIÓN</h2>
+          <p>Adoptar no solo es salvar una vida, es un pacto de amor y compromiso.</p>
+        </div>
+        <div class="imagen">
+          <img src="../assets/img/tres_mascotas.png" alt="Animales-indicaciones-adopción" />
+        </div>
+        <!--Efecto curva-->
+        <div class="wave">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path
+              d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"
+            ></path>
+          </svg>
+        </div>
+      </section>
+    </main>
 
-<section id="proceso-adopcion">
-  <h2>Proceso de Adopción</h2>
-  <p class="intro">Adoptar no solo es salvar una vida, es un pacto de amor y compromiso.</p>
-
+<section class="procesoadopt" id="proceso-adopcion">
+  
   <div class="paso">
     <div class="icono"><i class="fa-solid fa-paw"></i></div>
     <div class="contenido">
@@ -77,59 +67,8 @@
   </div>
 </section>
 
-  <!--Footer-->
-    <footer class="footer">
-      <div class="footer-contenido">
-    <div class="footer-logo">
-      <img src="../assets/img/imagen-footer.png" alt="perrito final">
-      <h3>HUELLAS SOLIDARIAS</h3>
-      <p>Unidos por quienes no tienen voz</p>
-
-      <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-    </div>
-
-    <!--Menu-->
-    <div class="footer-menu">
-      <h4>Menú</h4>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="adopciones.html">Adopciones</a></li>
-        <li><a href="donar.html">Donaciones</a></li>
-        <li><a href="contacto.html">Cómo puedes ayudar</a></li>
-      </ul>
-      <h4>Enlaces rápidos</h4>
-      <ul>
-        <li><a href="privacidad.html">Políticas de privacidad</a></li>
-      </ul>
-    </div>
-
-    <!--Contacto-->
-    <div class="footer-contacto">
-      <h4>Contáctanos</h4>
-        <p>
-          <i class="fa-solid fa-location-dot"></i>
-          <a href="https://www.google.com/maps?q=Bogotá" target="_blank">Bogotá</a> <!--Target: permite abrir otra pagina-->
-        </p>
-        <p><i class="fa-solid fa-envelope"></i> Huellasls@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> 3403459836 - 3105792629</p>
-        <p><i class="fa-solid fa-clock"></i> Lunes a domingo, de 8:00 a.m. a 6:00 p.m.</p>
-    </div>
-  </div>
-
-  <div class="footer-inferior">
-    <p>2025 - Todos los derechos reservados</p>
-  </div>
-</footer>
-
-<!--Chatbot-->
-<a href="https://wa.me/573043018954?text=Hola%20quiero%20más%20información" 
-   class="whatsapp" target="_blank">
-   <i class="fa-brands fa-whatsapp"></i>
-</a>
-</body>
+<!--Footer-->
+     <div id="footer"></div>
+    <script src="../dist/main.js" type="module"></script>
+  </body>
 </html>
