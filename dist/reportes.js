@@ -1,4 +1,5 @@
 import { Header } from "./header.js";
+import { initChatbot } from "./chatbot.js"; 
 
 async function includeHTML(id, file) {
   const el = document.querySelector(id);//Busca en el dom el elemento con ese selector
@@ -9,10 +10,16 @@ async function includeHTML(id, file) {
 
 async function init() {
   await includeHTML("#header", "header.html");
-  new Header("nav"); //Enlaza comportamientos del menu (abrir, cerrar)
+  new Header("nav");//Enlaza comportamientos del menu (abrir, cerrar)
+
   await includeHTML("#footer", "footer.html");
+
+  await includeHTML("#chatbot", "chatbot.html");
+  initChatbot(); //funcionalidad después de traer el HTML
 }
+
 init();
+
 
 document.addEventListener("DOMContentLoaded", () => { //Se ejecutara cuando todo el html este listo
   //1. Leer URL

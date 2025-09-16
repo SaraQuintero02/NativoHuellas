@@ -79,10 +79,10 @@
 
 .adoptable p {
   margin-bottom: 2rem;
-  color: #333;
+  color: #000000;
 }
 
-/* Grid */
+/*Grid*/
 .grid-adoptables {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -91,9 +91,9 @@
   
 }
 
-/* Tarjetas */
+/*Tarjetas*/
 .adopt {
-  background-color: #fef8e7; /* beige suave */
+  background-color: #FFFAE7;
   border-radius: 1rem;
   padding: 1rem;
   width: 220px;
@@ -101,7 +101,7 @@
   text-align: center;
 }
 
-/* Imagen dentro de la tarjeta */
+/*Imagen dentro de la tarjeta*/
 .adopt img {
   width: 100%;
   height: 180px;
@@ -110,14 +110,14 @@
   margin-bottom: 0.8rem;
 }
 
-/* Nombre y edad */
+/*Nombre y edad*/
 .adopt h3 {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
-/* Enlace "Ver más" */
+/*Enlace "Ver más"*/
 .adoptable a {
   display: inline-block;
   margin-top: 2rem;
@@ -130,7 +130,7 @@
 }
 
 .adoptable a:hover {
-  color: #555;
-  border-color: #555;
+  color: #000000;
+  border-color: #000000;
 }
 

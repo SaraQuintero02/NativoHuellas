@@ -1,0 +1,99 @@
+body, .chatbot-popup, .chatbot-float {
+  font-family: 'Poppins', sans-serif;
+}
+/*Icono*/
+.chatbot-float {
+  position: fixed; /*Esquina inferio derecha*/
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 28px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 0;
+  cursor: pointer;       
+  text-decoration: none;
+}
+
+/*Al pasar el mause*/
+.chatbot-popup .popup-body p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #000000;
+  margin: 0 0 14px 0;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-float:hover {
+  transform: scale(1.1);
+}
+
+/*Ventana emergente*/
+.chatbot-popup {
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 1rem;
+  z-index: 999;
+}
+
+/*Encabezado de ventana emergente*/
+.popup-header {
+  background: #000000; 
+  color: #ffffff;
+  padding: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-header span {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.popup-body {
+  padding: 12px;
+  text-align: left;
+}
+
+/*Botones*/
+.popup-btn {
+  display: block;
+  margin-top: 8px;
+  background: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.popup-btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+  transform: translateY(-2px);/*Animación*/
+}
+

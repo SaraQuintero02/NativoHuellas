@@ -1,0 +1,30 @@
+.breadcrumb {
+  margin: 150px 0 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}

@@ -6,16 +6,32 @@ body {
 }
 
 /*Header*/
+
 header {
   background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100%;
   padding: 1.5rem 3rem;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /*No rompera el ancho*/
 }
 
-/*Navegación menu principal*/
+/*Navegación*/
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1200px;  
+  margin: 0 auto;     
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap; /*Evita que el texto quede en varias lineas*/
+}
+.hero {
+  padding-top: 180px;
 }
 
 /*Titulo*/
@@ -27,6 +43,8 @@ nav h1 {
   gap: 8px;
   color: #000000;
   margin: 0;
+  margin-left: -20rem;
+  margin-right: 50rem;
 }
 
 /*Menu principal*/

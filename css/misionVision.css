@@ -1,0 +1,120 @@
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*Contenedor principal*/
+.hero {
+  position: relative;
+  display: flex;              
+  justify-content: center;   
+  align-items: center;
+  gap: 60px;
+  background: #D9D7F1;
+  margin: 0;
+  padding: 40px 0 0 0 0; /*superior y lados*/
+  flex-wrap: wrap;/*Aplica en celulares*/
+}
+
+/*Imagen superior*/
+.hero .imagen img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 40px;
+  margin-right: 80px;
+}
+
+/*Texto superior*/
+.hero .contenido {
+  max-width: 480px; 
+  text-align: left;
+}
+
+.hero .contenido h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.hero .contenido p {
+  font-size: 1.1rem;
+  color: #000000;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/*Curva*/
+.hero .wave {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.hero .wave svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+.hero .wave path {
+  fill: #ffffff; /* color de la curva inferior */
+}
+
+/*Sección de misión y visión*/
+.contenedor-info {
+  display: flex;
+  justify-content: center;   
+  gap: 80px;                 
+  flex-wrap: wrap;  
+  margin: 100px auto 300px auto;
+  max-width: 1400px;
+  padding: 0 20px;
+
+}
+
+/*Ajuste de las tajetas misión y visión*/
+.info {
+  flex: 1 1 500px; /*Se adapta al espacio*/
+  max-width: 900px;
+  background: #e6f3ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info .icon {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.info.mision .icon {
+  color: #ffb400;
+}
+
+.info.vision .icon {
+  color: #3da9fc;
+}
+
+/*Texto y titulos*/
+.info h2 {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000000;
+}
+

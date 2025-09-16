@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Misión y Visión</title>
-    <link rel="stylesheet" href="../css/misionVision.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="../css/misionVision.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
   </head>
 
   <body>
-  <section>
-    <div class="mision">
-      <img src="../assets/img/estrella.png" alt="estrella" width="30" height="30">
-      <h2>MISIÓN</h2>
-      <p>Ser la plataforma líder en Bogotá para el rescate, adopción y protección de animales en situación de vulnerabilidad, 
-        promoviendo una cultura ciudadana basada en la empatía, la responsabilidad y el respeto hacia la vida animal, 
-        contribuyendo a comunidades más sostenibles, seguras y solidarias.</p>
-    </div>
+    <header id="header"></header>
+     <div id="migapan"></div>
+    <div id="chatbot"></div>
+    
+    <!--Sección superior-->
+    <main id="inicio">
+      <section class="hero">
+        <div class="contenido">
+          <h1>Rescatamos vidas, damos esperanza</h1>
+          <p>Únete a nuestra misión de salvar y dar hogar a los animales que más lo necesitan.</p>
+        </div>
+        <div class="imagen"><img src="../assets/img/misionVision.png" alt="Perritos de sección mision y visión"/></div>
 
-    <div class="vision">
-      <img src="../assets/img/cinta.png" alt="cinta" width="30" height="30">
-      <h2>VISIÓN</h2>
-      <p>Conectar a ciudadanos, fundaciones y entidades públicas mediante el rescate, registro y adopción responsable de animales 
-        en situación de abandono, garantizando accesibilidad, seguridad e información y educación ciudadana para reducir el maltrato 
-        y fomentar la tenencia responsable.</p>
-    </div>
-  </section>
-</body>
+        <!--Curva-->
+        <div class="wave">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      <div class="contenedor-info">
+        <section class="info mision">
+          <div class="icon">
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h2>MISIÓN</h2>
+          <p>
+            Ser la plataforma líder en Bogotá para el rescate, adopción y
+            protección de animales en situación de vulnerabilidad, promoviendo
+            una cultura ciudadana basada en la empatía, la responsabilidad y el
+            respeto hacia la vida animal, contribuyendo a comunidades más
+            sostenibles, seguras y solidarias.
+          </p>
+        </section>
+
+        <section class="info vision">
+          <div class="icon">
+            <i class="fa-solid fa-ribbon"></i>
+          </div>
+          <h2>VISIÓN</h2>
+          <p>
+            Conectar a ciudadanos, fundaciones y entidades públicas mediante el
+            rescate, registro y adopción responsable de animales en situación de
+            abandono, garantizando accesibilidad, seguridad de la información y
+            educación ciudadana para reducir el maltrato y fomentar la tenencia
+            responsable.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+    <nav aria-label="Breadcrumb" class="breadcrumb" id="breadcrumb"></nav>
+    <script src="../dist/main.js" type="module"></script>
+    <script src="../dist/migapan.js"></script>
+  </body>
 </html>

@@ -55,7 +55,7 @@ body {
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 120px;
   overflow: hidden;
   line-height: 0;
   pointer-events: none;
@@ -64,7 +64,7 @@ body {
 .wave svg {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 120px;
 }
 
 .wave path {
@@ -133,19 +133,19 @@ body {
 /*Ajuste individual de cada imagen*/
 .reporte-card.abandonado .img-box img {
   width: 280px;
-  top: 62px;
+  top: -5px;
   position: relative;
 }
 
 .reporte-card.maltratado .img-box img {
-  width: 280px;
-  top: 15px;
+  width: 400px;
+  top: -10px;
   position: relative;
 }
 
 .reporte-card.encerrado .img-box img {
-  width: 290px;
-  top: 29px;
+  width: 230px;
+  top: -18px;
   position: relative;
 }
 
@@ -289,134 +289,4 @@ section.reportes .reportes-contenedor .reporte-card button:hover {
 /*Separación extra con el footer*/
 .aliados {
   margin-bottom: 20rem;
-}
-
-
-    /* Responsive */
-    @media (max-width: 750px) {
-      .registro {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-/* Adoptables css */
-/* Sección adoptables */
-.adoptable {
-  text-align: center;
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-}
-
-.adoptable h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.adoptable p {
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-/* Grid */
-.grid-adoptables {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-}
-
-/* Tarjetas */
-.adopt {
-  background-color: #fef8e7; /* beige suave */
-  border-radius: 1rem;
-  padding: 1rem;
-  width: 220px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* Imagen dentro de la tarjeta */
-.adopt img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 0.8rem;
-  margin-bottom: 0.8rem;
-}
-
-/* Nombre y edad */
-.adopt h3 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Enlace "Ver más" */
-.adoptable a {
-  display: inline-block;
-  margin-top: 2rem;
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid #000;
-  padding-bottom: 2px;
-  transition: 0.2s;
-}
-
-.adoptable a:hover {
-  color: #555;
-  border-color: #555;
-}
-
-/* Sección proceso adopción */
-.procesoadopt {
-  padding: 2rem;
-  font-family: Arial, sans-serif;
-  color: #222;
-}
-
-.procesoadopt h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.procesoadopt .intro {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  color: #444;
-}
-
-/* Cada paso */
-.paso {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-  gap: 1rem;
-}
-
-/* Íconos */
-.paso .icono {
-  font-size: 1.8rem;
-  color: #000;
-  min-width: 40px;
-  text-align: center;
-}
-
-/* Contenido */
-.paso .contenido h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 0.8rem;
-}
-
-.paso .contenido p {
-  background-color: #fef8e7; /* Beige suave */
-  padding: 1rem;
-  border-radius: 0.8rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #333;
 }

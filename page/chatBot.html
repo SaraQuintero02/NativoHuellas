@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat bot</title>
+    <link rel="stylesheet" href="../css/chatbot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
+  </head>
+
+  <body>
+    <!--Icono del chatbot-->
+    <div class="chatbot-container" id="chatbot">
+      <div class="chatbot-popup" id="chatbotPopup">
+        <div class="popup-header">
+          <strong>Bienvenido a Rescate Animal</strong>
+          <span id="closePopup">&times;</span> <!--Botón ce cerrar (x)-->
+        </div>
+        <div class="popup-body">
+          <p>
+            ¿Buscas adoptar, rescatar o apoyar nuestra causa? <br />Selecciona
+            una de nuestras líneas de atención para comenzar.
+          </p>
+          <a href="https://wa.me/573043018954" target="_blank" class="popup-btn">Línea 1: Atención general</a>
+          <a href="https://wa.me/573105759629" target="_blank" class="popup-btn">Línea 2: Adopciones</a>
+          <a href="https://wa.me/573152983457" target="_blank" class="popup-btn">Línea 3: Donaciones</a>
+        </div>
+      </div>
+      <a class="chatbot-float" id="chatbotButton" aria-label="Chat bot"><i class="fa-solid fa-comment"></i></a>
+    </div>
+    <script src="../dist/chatbot.js" type="module"></script>
+  </body>
+</html>
