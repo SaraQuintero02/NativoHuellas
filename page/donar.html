@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donaciones - Huellas Solidarias</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!-- Font Awesome -->
-  </head>
-  <body>
-    <!--Header-->
 
-    <section class="donaciones">
-      <h1>DONAR ALIMENTA TU ALMA</h1>
-      <p>
-        Cada donación a nuestra asociación protectora de animales es una chispa
-        de esperanza. Con tu generosidad, podemos salvar vidas, aliviar el
-        sufrimiento y brindar cuidado a seres que no tienen voz para pedir
-        ayuda. Tu apoyo es un acto de amor y compasión que marca la diferencia
-        en su historia. Sé el héroe que estos animales necesitan y ayúdanos a
-        construir un mundo más justo y lleno de cariño para ellos. ¡Dona hoy y
-        cambia una vida para siempre!
-      </p>
-      <img src="../assets/img/rescate.png (2).png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donar</title>
+  <link rel="stylesheet" href="../css/donar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <!--font awesome-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+</head>
 
-      <div class="donation-methods">
-        <h2>Métodos de Donación</h2>
-        <p>
-          <strong
-            ><img
-              src="../assets/img/nequi.webp"
-              alt="Nequi"
-              width="70"
-              height="60"
-            />
-            Nequi:</strong
-          >
-          Número: xxxxxxxxxx | Nombre: Huellas Solidarias
+<body>
+  <div id="header"></div>
+  <div id="migapan"></div>
+  <div id="chatbot"></div>
+
+  <!--Sección principal-->
+  <main id="donaciones">
+    <section class="hero">
+      <div class="texto">
+        <h2>DONAR ALIMENTA TU ALMA</h2>
+        <p>Cada donación a la asociación protectora de animales representa una oportunidad para salvar vidas y aliviar el sufrimiento. Tu apoyo es un acto de amor que transforma la vida de animales necesitados. ¡Dona y sé el cambio que ellos necesitan!
         </p>
-        <p>
-          <strong
-            ><img
-              src="../assets/img/daviplata.jpg"
-              alt="Daviplata"
-              width="100"
-              height="60"
-            />
-            Daviplata:</strong
-          >
-          Número: xxxxxxxxxx | Nombre: Huellas Solidarias
         </p>
-        <p>
-          <strong
-            ><img
-              src="../assets/img/bancolombia.png"
-              alt="Bancolombia"
-              width="200"
-              height="200"
-            />
-            Grupo Bancolombia:</strong
-          >
-          Cuenta de ahorros: xxx-xxx-xxx-xx
-        </p>
-        <p><strong>NIT:</strong> xxx.xxx.xxx.xxxx</p>
       </div>
-
-      <div class="video-donaciones">
-        <video
-          src="../assets/img/Adopta, cuida y esteriliza (Video animado para niños) _ Aprende con Zuly.mp4"
-          width="40%"
-          height="300"
-          controls
-          poster="./LosPrisioneros-1024x574.jpg"
-          loop
-          autoplay
-        ></video>
-        <h3>Huellas Solidarias</h3>
+      <div class="imagen">
+        <img src="../assets/img/donar.png" alt="Perro donar" />
+      </div>
+      <!--Efecto curva-->
+      <div class="wave">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"></path>
+        </svg>
       </div>
     </section>
+  </main>
 
-    <!--Footer-->
+  <section class="metodos">
+    <h2 class="donacion">MÉTODOS DE DONACIÓN</h2>
+    <div class="metodos-container">
+      <div class="metodo">
+        <img src="../assets/img/nequi.webp" alt="Nequi" />
+        <div class="info">
+          <strong>NEQUI</strong>
+          <p>Número: 3456324566<br />Nombre: Huellas Solidarias</p>
+        </div>
+      </div>
+
+
+      <div class="metodo">
+        <img src="../assets/img/daviplata.png" alt="Daviplata" />
+        <div class="info">
+          <strong>DAVIPLATA</strong>
+          <p>Número: 3456324566<br />Nombre: Huellas Solidarias</p>
+        </div>
+      </div>
+
+      <div class="metodo">
+        <img src="../assets/img/bancolombia.png" alt="Bancolombia" />
+        <div class="info">
+          <strong>GRUPO BANCOLOMBIA</strong>
+          <p>Cuenta de ahorros Bancolombia<br />
+            Fundación Huellas Solidarias:<br />
+            223-334-678-66<br />
+            NIT: 666.223.456.3345</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Video-->
+    <div class="video-donaciones">
+      <video 
+        src="../assets/img/Adopta, cuida y esteriliza (Video animado para niños) _ Aprende con Zuly.mp4"
+        width="40%"
+        height="300"
+        controls
+        poster="../assets/img/videoanimal.png"
+        loop
+        autoplay>
+      </video>
+    </div>
+    
+   <!--Menu de ayudas-->
+   <h3 class="Ayuda">TUS DONACIONES AYUDAN CON</h3>
+   <ul class="check-list">
+    <li>Alimentación</li>
+    <li>Medicinas y Veterinarios</li>
+    <li>Implementos de Aseo</li>
+    <li>Mantenimiento de Instalaciones</li>
+    <li>Apoyo a animales con discapacidades</li>
+  </ul> 
+  </section>
+
+  <!--Footer-->
+  <div id="footer"></div>
+    <script src="../dist/main.js" type="module"></script>
   </body>
 </html>
