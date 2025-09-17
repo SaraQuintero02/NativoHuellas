@@ -1,5 +1,6 @@
 import { Header } from "./header.js";
 import { initChatbot } from "./chatbot.js"; 
+import { initBreadcrumb } from "./migapan.js";
 
 async function includeHTML(id, file) {
   const el = document.querySelector(id);//Busca en el dom el elemento con ese selector
@@ -18,6 +19,7 @@ async function init() {
   initChatbot(); //funcionalidad después de traer el HTML
 
   await includeHTML("#migapan", "migapan.html");
+  initBreadcrumb();
 }
 
 init();

@@ -1,5 +1,15 @@
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*Estilos para los ol*/
 .breadcrumb {
-  margin: 150px 0 20px 0;
+  margin: 105px 0 5px 0;
+  padding-left: 30px; 
   font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
@@ -13,13 +23,14 @@
 
 .breadcrumb li a {
   text-decoration: none;
-  color: #007bff;
+  color: #0056b3;
 }
 
 .breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+/*Separador >*/
 .breadcrumb li::after {
   content: ">";
   margin-left: 10px;
