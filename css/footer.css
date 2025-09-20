@@ -33,7 +33,7 @@ body {
 .footer-logo img {
   max-width: 300px;
   position: absolute;
-  top: -373px; /*Queda en la parte superior*/
+  top: -340px; /*Queda en la parte superior*/
   left: 50%;
   transform: translateX(-50%);
 }

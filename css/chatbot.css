@@ -3,14 +3,14 @@ body, .chatbot-popup, .chatbot-float {
 }
 /*Icono*/
 .chatbot-float {
-  position: fixed; /*Esquina inferio derecha*/
+  position: fixed; /*Esquina inferior derecha*/
   bottom: 25px;
   right: 25px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background: #000000;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 15px;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   z-index: 1000;
@@ -87,7 +87,7 @@ body, .chatbot-popup, .chatbot-float {
   text-align: center;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
   transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
 }
@@ -97,3 +97,34 @@ body, .chatbot-popup, .chatbot-float {
   transform: translateY(-2px);/*Animación*/
 }
 
+/*Botón para subir automaticamente*/
+.scroll-to-top {
+  position: fixed;
+  bottom: 70px; /*No choca con el chatbot*/
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.2s;
+  z-index: 1000;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: scale(1.1);
+}

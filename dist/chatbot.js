@@ -22,6 +22,23 @@ export function initChatbot() {
       popup.style.display = "none";
     }
   });
+
+  //Botón para subir automaticamente
+  const scrollButton = document.getElementById("scrollButton");
+  if (scrollButton) {
+    //Mostrar y ocultar boton segun el scroll (desplazamiento)
+    window.addEventListener("scroll", () => { //Escucha el evento
+      if (window.scrollY > 400) {
+        scrollButton.classList.add("visible");
+      } else {
+        scrollButton.classList.remove("visible");
+      }
+    });
+
+    //Al presionar el botón se hace el desplazamiento 
+    scrollButton.addEventListener("click", (e) => { 
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 }
-
-

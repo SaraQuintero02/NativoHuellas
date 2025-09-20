@@ -1,0 +1,412 @@
+/*Iconos/Botones de accesibilidad*/
+.botones-accesibilidad {
+  position: fixed;
+  top: 40%;         
+  right: 15px;      
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+.botones-accesibilidad button {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;       
+  height: 35px;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.botones-accesibilidad button:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+/*CONTRASTE INICIO/HEADER*/
+body.contraste-activo {
+  background-color: #000 !important;
+  color: #ff0 !important;
+}
+
+body.contraste-activo .breadcrumb,
+body.contraste-activo .breadcrumbs {
+  background-color: #000 !important;
+}
+
+body.contraste-activo .breadcrumb a,
+body.contraste-activo .breadcrumb span,
+body.contraste-activo .breadcrumbs a,
+body.contraste-activo .breadcrumbs span {
+  color: #ff0 !important;
+}
+
+body.contraste-activo header,
+body.contraste-activo .hero {
+  background: #000 !important;
+}
+
+body.contraste-activo header *,
+body.contraste-activo .hero .texto,
+body.contraste-activo .hero .texto h2,
+body.contraste-activo .hero .texto p {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .hero .wave path {
+  fill: #fff !important;
+}
+
+/*Submenú*/
+body.contraste-activo nav ul ul {
+  background-color: #000 !important; 
+  border: 1px solid #000 !important; 
+}
+
+body.contraste-activo nav ul ul li a {
+  color: #ff0 !important; 
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+body.contraste-activo nav ul ul li a:hover {
+  background-color: #333333 !important; 
+  color: #ff0 !important; /
+}
+
+/*Reportes*/
+body.contraste-activo .reportes {
+  background: #ffffff !important;
+}
+
+body.contraste-activo .reportes h2,
+body.contraste-activo .reportes .subtexto {
+  color: rgb(0, 0, 0) !important;
+}
+
+body.contraste-activo .img-box {
+  background: #000000 !important;
+  box-shadow: 0 0 4px #fff !important;
+}
+
+body.contraste-activo .reportes .reporte-card a button {
+  background-color: #000 !important;
+  color: #ff0 !important;          
+}
+
+body.contraste-activo .reportes .reporte-card a button:hover {
+  background-color: #333333 !important; 
+  color: #ff0 !important;
+}
+
+/*Estadística*/
+body.contraste-activo .estadistica {
+  background: #000000 !important;
+}
+
+body.contraste-activo .estadistica i,
+body.contraste-activo .estadistica h3,
+body.contraste-activo .estadistica p {
+  color: #ff0 !important;
+}
+
+/*Galería*/
+body.contraste-activo .informativa {
+  background-color: #fff !important;
+  width: 100%; 
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/*Aliados*/
+body.contraste-activo .aliados {
+  background-color: #fff !important;
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+body.contraste-activo .aliados h2,
+body.contraste-activo .informativa h2,
+body.contraste-activo .informativa p {
+  color: #000 !important;
+}
+
+body.contraste-activo {
+  background-color: #fff !important;
+}
+
+/*CONTRASTE FOOTER*/
+body.contraste-activo .footer,
+body.contraste-activo .footer-contenido,
+body.contraste-activo .footer-inferior {
+  background: #000 !important;
+  color: #ff0 !important;
+}
+body.contraste-activo footer {
+  margin-top: 200px;
+}
+
+body.contraste-activo .footer-menu a,
+body.contraste-activo .footer-contacto a,
+body.contraste-activo .redes a,
+body.contraste-activo .footer-contacto i,
+body.contraste-activo .footer h3,
+body.contraste-activo .footer p {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .footer-inferior {
+  border-top: 1px solid #ff0 !important;
+}
+
+/*CONTRASTE BOTONES ACCESIBILIDAD*/
+body.contraste-activo .botones-accesibilidad button {
+  color: #ff0  !important;               
+}
+
+body.contraste-activo .botones-accesibilidad button i,
+body.contraste-activo .botones-accesibilidad button svg {
+  color: #ff0  !important;
+}
+
+/*CONTRASTE CHATBOT Y FLECHA*/
+body.contraste-activo .chatbot-float,
+body.contraste-activo .chatbot-float i {
+  color:  #ff0 !important;
+}
+
+body.contraste-activo .scroll-to-top,
+body.contraste-activo .scroll-to-top i {
+  background-color: #000 !important;
+  color: #ff0 !important;            
+
+}
+
+/*CONTRASTE MISION VISION*/
+body.contraste-activo .hero h1,
+body.contraste-activo .hero p {
+  color:  #ff0 !important; 
+}
+
+body.contraste-activo .info {
+  background-color: #000 !important;
+  color: #ff0 !important; 
+}
+
+body.contraste-activo .info h2,
+body.contraste-activo .info h3,
+body.contraste-activo .info p {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .contenedor-info {
+  margin-bottom: 60px; 
+}
+body.contraste-activo.page-mision {
+  background-color: #fff !important;
+}
+
+/*CONTRASTE VOLUNTARIADOS*/
+body.contraste-activo .voluntariado {
+  background-color: #000 !important;
+  color: #ff0 !important; 
+}
+
+body.contraste-activo .voluntariado h2,
+body.contraste-activo .voluntariado p,
+body.contraste-activo .formulario button {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .formulario button {
+  background-color: #000 !important;
+}
+
+body.contraste-activo .formulario-voluntario h2 {
+  color: #000 !important;
+}
+
+/*CONTRASTE INISIO DE SESION*/
+body.contraste-activo .Ingresar {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  box-shadow: 0 4px 8px rgba(255, 255, 0, 0.3) !important;
+}
+
+body.contraste-activo .login h2 {
+  color: #000 !important;
+}
+
+body.contraste-activo .Ingresar label,
+body.contraste-activo .Registro a,
+body.contraste-activo #mensaje {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .Ingresar input,
+body.contraste-activo .Ingresar textarea {
+  color: #ff0 !important;
+  background-color: #111 !important;
+  border: 1px solid #ff0 !important;
+}
+
+body.contraste-activo .Ingresar input::placeholder,
+body.contraste-activo .Ingresar textarea::placeholder {
+  color: #ffff99 !important;
+}
+
+body.contraste-activo .Ingresar button {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  border: 1px solid #ff0 !important;
+}
+body.contraste-activo .Ingresar button:hover {
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+/*CONTRASTE DONAR*/
+body.contraste-activo #donaciones .hero {
+  background-color: #000 !important; 
+}
+body.contraste-activo #donaciones .hero h2 {
+  color: #ff0 !important; 
+}
+
+/*Metodos de donación*/
+body.contraste-activo .metodos-container .info,
+body.contraste-activo .check-list,
+body.contraste-activo .Ayuda {
+  color: #000 !important;   
+  margin-bottom: 60px; 
+}
+
+body.contraste-activo .metodos-container .info {
+  background-color: #fff !important;
+}
+
+body.contraste-activo .metodos-container .info strong {
+  color: #000 !important;
+}
+
+body.contraste-activo .metodos-container .info p {
+  color: #000 !important;
+}
+
+/*CONTRASTE REGISTRO*/
+body.contraste-activo .Registrar {
+  background-color: #000 !important;
+  color: #ff0 !important;
+}
+
+body.contraste-activo .registro h2 {
+  color: #000 !important;
+}
+
+body.contraste-activo .Registrar label,
+body.contraste-activo .Registrar input,
+body.contraste-activo #mensaje {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .Registrar input {
+  background-color: #111 !important;
+  border: 1px solid #ff0 !important;
+}
+
+body.contraste-activo .Registrar input::placeholder {
+  color: #ffff99 !important;
+}
+
+body.contraste-activo .btn-registrar {
+  background-color: #111 !important;
+  color: #ff0 !important;
+  border: 1px solid #ff0 !important;
+}
+body.contraste-activo .btn-registrar:hover {
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+body.contraste-activo .Login a {
+  color: #ff0 !important;
+}
+
+/*CONTRASTE REPORTES*/
+body.contraste-activo {
+  background-color: #000 !important;
+}
+
+body.contraste-activo .form-reporte {
+  background-color: #fff !important; 
+  color: #000 !important;
+  box-shadow: none !important; 
+}
+
+body.contraste-activo .form-reporte form {
+  background-color: #000 !important; 
+  padding: 30px;
+  border-radius: 6px;
+}
+
+body.contraste-activo .form-reporte h2 {
+  color: #000 !important;
+}
+
+
+body.contraste-activo .form-reporte label {
+  color: #ff0 !important;
+}
+
+body.contraste-activo .form-reporte select,
+body.contraste-activo .form-reporte input,
+body.contraste-activo .form-reporte textarea {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  border: 1px solid #ff0 !important;
+}
+
+body.contraste-activo .form-reporte input::placeholder,
+body.contraste-activo .form-reporte textarea::placeholder {
+  color: #ffff99 !important;
+}
+
+body.contraste-activo .form-reporte button {
+  background-color: #000 !important;
+  color: #ff0 !important;
+  border: 1px solid #ff0 !important;
+}
+body.contraste-activo .form-reporte button:hover {
+  background-color: #ff0 !important;
+  color: #000 !important;
+}
+
+body.contraste-activo {
+  background-color: #fff !important;
+}
+
+body.contraste-activo footer {
+  background-color: #000 !important;
+  color: rgb(255, 255, 255) !important;
+   box-shadow: none !important; 
+}
+
+body.contraste-activo .form-reporte {
+  background-color: #fff !important; 
+}
+
+body.contraste-activo .form-reporte form {
+  background-color: #000 !important; 
+}

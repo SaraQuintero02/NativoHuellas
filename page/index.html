@@ -2,10 +2,11 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huella solidarias</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/accesibility.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
   </head>
@@ -43,25 +44,19 @@
       <div class="reportes-contenedor">
         <!--Abandonado-->
         <div class="reporte-card abandonado">
-          <div class="img-box">
-            <img src="../assets/img/abandonados.png" alt="Animal Abandonado" />
-          </div> 
+          <div class="img-box"><img src="../assets/img/abandonados.png" alt="Animal Abandonado" /></div> 
           <a href="reportes.html?tipo=abandonado"><button>Abandonados</button></a>
         </div>
 
         <!--Maltratado-->
         <div class="reporte-card maltratado">
-          <div class="img-box">
-            <img src="../assets/img/maltratados.png" alt="Animal Maltratado" />
-          </div>
+          <div class="img-box"><img src="../assets/img/maltratados.png" alt="Animal Maltratado" /></div>
           <a href="reportes.html?tipo=maltratado"><button>Maltratados</button></a>
         </div>
 
         <!--Encerrado-->
         <div class="reporte-card encerrado">
-          <div class="img-box">
-            <img src="../assets/img/encerrados.png" alt="Animal Encerrado" />
-          </div>
+          <div class="img-box"><img src="../assets/img/encerrados.png" alt="Animal Encerrado" /></div>
           <a href="reportes.html?tipo=encerrado"><button>Encerrados</button></a>
         </div>
       </div>
@@ -114,8 +109,16 @@
         <a href="https://www.instagram.com/adoptanocompres/" target="_blank"><img src="../assets/img/logo4.png" alt="Huellitas Sin Hogar" /></a>
       </div>
     </section>
-    
+
+    <!--Botones de accesibilidad-->
+    <div class="botones-accesibilidad">
+      <button id="aumentarFuente" aria-label="Aumentar de fuente">A+</button>
+      <button id="disminuirFuente" aria-label="Disminuir de fuente">A-</button>
+      <button id="contraste" aria-label="Contraste"><i class="fa-solid fa-adjust"></i></button>
+    </div>
+
     <div id="footer"></div>
     <script src="../dist/main.js" type="module"></script>
+    <script src="../dist/accesibility.js" defer></script>
   </body>
 </html>

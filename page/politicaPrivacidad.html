@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Política de privacidad</title>
-    <link rel="stylesheet" href="../css/politicaPrivacidad.css" />
+    <link rel="stylesheet" href="../css/politicaPrivacidad.css"/>
+    <link rel="stylesheet" href="../css/accesibility.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
   </head>
@@ -46,7 +47,16 @@
         </p>
       </div>
     </section>
+
+     <!--Botones de accesibilidad-->
+    <div class="botones-accesibilidad">
+      <button id="aumentarFuente" aria-label="Aumentar de fuente">A+</button>
+      <button id="disminuirFuente" aria-label="Disminuir de fuente">A-</button>
+      <button id="contraste" aria-label="Contraste"><i class="fa-solid fa-adjust"></i></button>
+    </div>
+
     <div id="footer"></div>
     <script src="../dist/main.js" type="module"></script>
+    <script src="../dist/accesibility.js" defer></script>
   </body>
 </html>

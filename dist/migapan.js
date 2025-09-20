@@ -8,20 +8,19 @@ export function initBreadcrumb() {
 
   // Define títulos según archivo
   const titles = {
-    "index.html": "Inicio",
-    "nosotros.html": "Nosotros",
-    "adoptables.html": "Adoptables",
-    "contacto.html": "Contáctanos",
-    "donar.html": "Donar",
-    "login.html":"Inicio de sesión",
-    "misionVision.html":"Misión y Visión",
-    "noticias.html":"Noticias",
-    "perfiles.html":"Perfil",
-    "politicaPrivacidad.html":"Politica de privacidad",
-    "procesoadopcion":"Proceso de adopción",
-    "registro.html":"Registro",
-    "reportes.html":"Reportes",
-    "voluntarios.html":"Voluntariado",
+    "index.html": ["Inicio"],
+    "adoptables.html": ["Adopciones > Adoptables"],
+    "contacto.html": ["Contáctanos"],
+    "donar.html": ["Donar"],
+    "login.html":["Inicio de sesión"],
+    "misionVision.html": ["Nosotros > Misión y visión"],
+    "noticias.html":["Nosotros > Noticias"],
+    "perfiles.html":["Perfil"],
+    "politicaPrivacidad.html":["Politica de privacidad"],
+    "procesoadopcion.html":["Adopciones > Proceso de adopción"],
+    "registro.html":["Registro"],
+    "reportes.html":["Reportes"],
+    "voluntarios.html":["Nosotros > Voluntariados"],
   };
 
   //Busca en el objeto el nombre de la pagina actual

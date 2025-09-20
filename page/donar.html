@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donar</title>
   <link rel="stylesheet" href="../css/donar.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-  <!--font awesome-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+      <link rel="stylesheet" href="../css/accesibility.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" /><!--font awesome-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
 </head>
 
 <body>
@@ -23,20 +22,18 @@
     <section class="hero">
       <div class="texto">
         <h2>DONAR ALIMENTA TU ALMA</h2>
-        <p>Cada donación a la asociación protectora de animales representa una oportunidad para salvar vidas y aliviar el sufrimiento. Tu apoyo es un acto de amor que transforma la vida de animales necesitados. ¡Dona y sé el cambio que ellos necesitan!
-        </p>
-        </p>
+        <p>Cada donación a la asociación protectora de animales representa una oportunidad para salvar vidas y aliviar el sufrimiento. Tu apoyo es un acto de amor que transforma la vida de animales necesitados. ¡Dona y sé el cambio que ellos necesitan!</p>
       </div>
       <div class="imagen">
         <img src="../assets/img/donar.png" alt="Perro donar" />
       </div>
-      <!--Efecto curva-->
-      <div class="wave">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"></path>
-        </svg>
-      </div>
-    </section>
+      <!--Curva-->
+        <div class="wave">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"></path>
+          </svg>
+        </div>
+      </section>
   </main>
 
   <section class="metodos">
@@ -95,8 +92,15 @@
   </ul> 
   </section>
 
-  <!--Footer-->
+   <!--Botones de accesibilidad-->
+    <div class="botones-accesibilidad">
+      <button id="aumentarFuente" aria-label="Aumentar de fuente">A+</button>
+      <button id="disminuirFuente" aria-label="Disminuir de fuente">A-</button>
+      <button id="contraste" aria-label="Contraste"><i class="fa-solid fa-adjust"></i></button>
+    </div>
+
   <div id="footer"></div>
     <script src="../dist/main.js" type="module"></script>
+    <script src="../dist/accesibility.js" defer></script>
   </body>
 </html>

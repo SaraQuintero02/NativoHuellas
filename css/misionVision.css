@@ -20,21 +20,27 @@ body {
 }
 
 /*Imagen superior*/
+.hero .imagen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Imagen superior*/
 .hero .imagen img {
-   width: 50%;          
-  margin: 0 auto;
-  display: block;
-  position: relative;
-  top: 40px;
-  margin-right: 80px;
-  transform: scale(1.5);    
-  transform-origin: center bottom; 
+  width: 80%;
+  max-width: 400px;
+  transform: scale(1.8) translateX(20px);
+  margin: 0;
 }
 
 /*Texto superior*/
 .hero .contenido {
-  max-width: 480px; 
+  flex: 1;
+  max-width: 480px;
   text-align: left;
+  padding-left: 80px;  
 }
 
 .hero .contenido h1 {
@@ -120,3 +126,16 @@ body {
   color: #000000;
 }
 
+/*Ajuste del footer*/
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
