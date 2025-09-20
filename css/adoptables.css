@@ -1,18 +1,20 @@
-/* Sección adoptables */
 .hero {
   background: #D9D7F1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 11%;
+  justify-content: center;   
+  gap: 300px; 
+  padding: 0% 10%;
   position: relative;
   overflow: hidden; /*Oculta contenido que sobresalga del contenedor*/
+  height: 360px; 
 }
 
 /*Texto*/
 .hero .texto {
   width: 45%;
   text-align: left;
+  margin-top: -190px;
 }
 
 .hero .texto h2 {
@@ -20,6 +22,7 @@
   font-weight: 900;
   margin-bottom: 10px;
   color: #000000;
+  white-space: nowrap; 
 }
 
 .hero .texto p {
@@ -30,16 +33,18 @@
 
 /*Imagen perro y gato*/
 .hero .imagen {
-  width: 45%;
+  width: 80%;
+  transform: scale(1.3);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .hero .imagen img {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
   object-fit: contain;
+  transform: translateY(-80px);
 }
 
 /*Efecto curva*/
@@ -48,7 +53,7 @@
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 150px;
+  height: 100px;
   overflow: hidden;
   line-height: 0;
   pointer-events: none;
@@ -57,7 +62,7 @@
 .wave svg {
   display: block;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 
 .wave path {
@@ -85,10 +90,22 @@
 /*Grid*/
 .grid-adoptables {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
   
+}
+
+@media (max-width: 900px) {
+  .grid-adoptables {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-adoptables {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*Tarjetas*/
@@ -99,6 +116,7 @@
   width: 220px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+  position: relative;
 }
 
 /*Imagen dentro de la tarjeta*/
@@ -134,3 +152,65 @@
   border-color: #000000;
 }
 
+.info-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Modal (overlay) */
+.modal {
+  position: fixed;         /* se queda fijo aunque hagas scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;           /* centra el contenido */
+  align-items: center;     /* centra vertical */
+  justify-content: center; /* centra horizontal */
+  background: rgba(0, 0, 0, 0.5); /* oscurece el fondo */
+  z-index: 1000;           /* encima de todo */
+}
+
+/* Oculto inicialmente */
+.modal.oculto {
+  display: none;
+}
+
+/* Contenido del modal */
+.modal-contenido {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  text-align: left;
+  position: relative; /* para que el botón cerrar se ubique dentro */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Botón cerrar (X) */
+#cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ajustes responsive */
+@media (max-width: 600px) {
+  .info-btn { width: 32px; height: 32px; top: 6px; right: 6px; }
+  .modal-contenido { padding: 18px; }
+}
