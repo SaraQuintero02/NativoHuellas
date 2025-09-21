@@ -10,15 +10,15 @@ async function includeHTML(id, file) {
 }
 
 async function init() {
-  await includeHTML("#header", "header.html");
+  await includeHTML("#header", "/page/header.html");
   new Header("nav");//Enlaza comportamientos del menu (abrir, cerrar)
 
-  await includeHTML("#footer", "footer.html");
+  await includeHTML("#footer", "/page/footer.html");
 
-  await includeHTML("#chatbot", "chatbot.html");
+  await includeHTML("#chatbot", "/page/chatbot.html");
   initChatbot(); //funcionalidad después de traer el HTML
 
-  await includeHTML("#migapan", "migapan.html");
+  await includeHTML("#migapan", "/page/migapan.html");
   initBreadcrumb();
 }
 
