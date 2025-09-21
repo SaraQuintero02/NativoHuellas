@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Huella solidarias</title>
-    <link rel="stylesheet" href="../css/adoptables.css" />
+    <link rel="stylesheet" href="../css/adoptables.css"/>
+    <link rel="stylesheet" href="../css/accesibility.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!--font awesome-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
   </head>
@@ -19,7 +20,10 @@
       <section class="hero">
         <div class="texto">
           <h2>ADOPTABLES</h2>
-          <p>Sí quieres darle una oportunidad a alguno de estos peludos, no dudes en llenar el formulario!</p>
+          <p>
+            Sí quieres darle una oportunidad a alguno de estos peludos, no dudes
+            en llenar el formulario!
+          </p>
         </div>
         <div class="imagen">
           <img src="../assets/img/gato_aruñando.png" alt="Gato-adoptables" />
@@ -27,50 +31,67 @@
         <!--Efecto curva-->
         <div class="wave">
           <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-            <path
-              d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"
-            ></path>
+            <path d="M-2.82,96.33 C152.95,185.21 349.20,8.52 500.00,112.27 L500.00,150.00 L0.00,150.00 Z"></path>
           </svg>
         </div>
       </section>
     </main>
 
-    <!--seccion-->
-<section id="adoptables" class="adoptable">
+    <!--Seccion adoptables-->
+    <section id="adoptables" class="adoptable">
+      <div class="grid-adoptables">
+        <article
+          class="adopt"
+          data-id="polito"
+          data-nombre="Polito"
+          data-edad="1 año"
+          data-historia="Rescatado a principios de agosto, se encuentra vacunado, pendiente por esterilización. Polito es muy jugueton, pero necesita mucho amor.">
+          <img src="../assets/img/polito.jpg" alt="Polito img" />
+          <h3>Polito | 1 año</h3>
+          <button class="info-btn" aria-label="Historia Polito">...</button>
+        </article>
+        <article
+          class="adopt"
+          data-id="asia"
+          data-nombre="Asia"
+          data-edad="7 meses"
+          data-historia="Encontrada a mediados de julio, pendiente por vacunas y esterilización, es bastante agresiva y nerviosa.">
+          <img src="../assets/img/asia.jpg" alt="Asia img" />
+          <h3>Asia | 7 meses</h3>
+          <button class="info-btn" aria-label="Historia Asia">...</button>
+        </article>
+        <article
+          class="adopt"
+          data-id="pedro"
+          data-nombre="Pedro"
+          data-edad="2 meses"
+          data-historia="Pedro llego el 3 de septiembre, ya se encuentra vacunado pendiente por esterilización, es muy nervioso con otros animales.">
+          <img src="../assets/img/pedro.jpg" alt="" />
+          <h3>Pedro | 2 meses</h3>
+          <button class="info-btn" aria-label="Historia Pedro">...</button>
+        </article>
+      </div>
+      <a href="#">Ver más...</a>
+    </section>
 
-    <div class="grid-adoptables">
-      <article class="adopt" data-id="polito" data-nombre="Polito" data-edad="1 año" data-historia="Rescatado a principios de agosto, se encuentra vacunado, pendiente por esterilización. Polito es muy jugueton, pero necesita mucho amor.">
-        <img src="../assets/img/polito.jpg" alt="Polito img">
-        <h3>Polito | 1 año</h3>
-        <button class="info-btn" aria-label="Historia Polito">...</button>
-      </article>
-      <article class="adopt" data-id="asia" data-nombre="Asia" data-edad="7 meses" data-historia="Encontrada a mediados de julio, pendiente por vacunas y esterilización, es bastante agresiva y nerviosa.">
-        <img src="../assets/img/asia.jpg" alt="Asia img">
-        <h3>Asia | 7 meses</h3>
-        <button class="info-btn" aria-label="Historia Asia">...</button>
-      </article>
-      <article class="adopt" data-id="pedro" data-nombre="Pedro" data-edad="2 meses" data-historia="Pedro llego el 3 de septiembre, ya se encuentra vacunado pendiente por esterilización, es muy nervioso con otros animales.">
-        <img src="../assets/img/pedro.jpg" alt="">
-        <h3>Pedro | 2 meses</h3>
-        <button class="info-btn" aria-label="Historia Pedro">...</button>
-      </article>
+    <div id="modal" class="modal oculto" aria-hidden="true">
+      <div class="modal-contenido">
+        <button id="cerrar" aria-label="Cerrar modal">✖</button>
+        <h2 id="nombre"></h2>
+        <p id="historia"></p>
+      </div>
     </div>
-    <a href="#">Ver más...</a>
-  </section>
 
-  <div id="modal" class="modal oculto" aria-hidden="true">
-    <div class="modal-contenido">
-      <button id="cerrar" aria-label="Cerrar modal">✖</button>
-      <h2 id="nombre"></h2>
-      <p id="historia"></p>
+    <!--Botones de accesibilidad-->
+    <div class="botones-accesibilidad">
+      <button id="aumentarFuente" aria-label="Aumentar de fuente">A+</button>
+      <button id="disminuirFuente" aria-label="Disminuir de fuente">A-</button>
+      <button id="contraste" aria-label="Contraste"><i class="fa-solid fa-adjust"></i></button>
     </div>
-  </div>
 
-
-<!--Footer-->
-     <div id="footer"></div>
+    <div id="footer"></div>
     <script src="../dist/main.js" type="module"></script>
+    <script src="../dist/accesibility.js" defer></script>
     <script src="../dist/adoptables.js" type="module"></script>
   </body>
-  
 </html>

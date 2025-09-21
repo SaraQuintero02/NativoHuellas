@@ -410,3 +410,20 @@ body.contraste-activo .form-reporte {
 body.contraste-activo .form-reporte form {
   background-color: #000 !important; 
 }
+
+/*CONTRASTE ADOPTABLES*/
+body.contraste-activo .adopt {
+  background-color: #000;
+}
+
+body.contraste-activo #modal .modal-contenido {
+  background-color: #000;
+}
+
+/*CONTRASTE PROCESO DE ADOPCION*/
+body.contraste-activo .procesoadopt .contenido p {
+  background-color: #000; 
+  color: #FFD700;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
