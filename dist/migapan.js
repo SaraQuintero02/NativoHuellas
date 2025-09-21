@@ -14,7 +14,7 @@ export function initBreadcrumb() {
     "donar.html": ["Donar"],
     "login.html":["Inicio de sesión"],
     "misionVision.html": ["Nosotros > Misión y visión"],
-    "noticias.html":["Nosotros > Noticias"],
+    "estadisticas.html":["Nosotros > Estadisticas"],
     "perfiles.html":["Perfil"],
     "politicaPrivacidad.html":["Politica de privacidad"],
     "procesoadopcion.html":["Adopciones > Proceso de adopción"],
