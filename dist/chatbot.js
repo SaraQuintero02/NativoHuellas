@@ -28,7 +28,7 @@ export function initChatbot() {
   if (scrollButton) {
     //Mostrar y ocultar boton segun el scroll (desplazamiento)
     window.addEventListener("scroll", () => { //Escucha el evento
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         scrollButton.classList.add("visible");
       } else {
         scrollButton.classList.remove("visible");

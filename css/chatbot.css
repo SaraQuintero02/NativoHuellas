@@ -128,3 +128,114 @@ body, .chatbot-popup, .chatbot-float {
 .scroll-to-top:hover {
   transform: scale(1.1);
 }
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .chatbot-popup {
+    width: 220px;      
+    bottom: 60px;      
+    right: 15px;
+  }
+
+  .popup-body p {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .popup-btn {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+
+  /*Icono Chatbot*/
+  .chatbot-float {
+    width: 28px;  
+    height: 28px;
+    font-size: 12px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  /*Icono flecha*/
+  .scroll-to-top {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    bottom: 50px;
+    right: 15px;
+  }
+}
+
+/*WEB RESPONSIVA PARA PANATALLAS ENTRE 769px y 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 80px;
+    text-align: center;
+  }
+
+  .hero .texto h2 {
+    font-size: 2rem;
+  }
+
+  .hero .imagen {
+    width: 100%;
+    transform: scale(0.95);
+  }
+
+  .hero .imagen img {
+    transform: translateY(0);
+    max-width: 300px;
+  }
+
+  .grid-adoptables {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem;
+  }
+
+  .adopt {
+    width: 50%;
+    max-width: 280px;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding: 50px 0;
+  }
+
+  .chatbot-popup {
+    width: 280px;      
+    bottom: 70px;      
+    right: 20px;       
+  }
+
+  .popup-body p {
+    font-size: 0.95rem; 
+    padding: 8px 12px;
+  }
+
+  .popup-btn {
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+
+  .chatbot-float {
+    width: 35px;       
+    height: 35px;
+    font-size: 14px;   
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .scroll-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    bottom: 65px;
+    right: 20px;
+  }
+}
+
+

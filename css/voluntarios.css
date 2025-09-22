@@ -196,3 +196,116 @@ body {
   margin-top: 12px;
   margin-left: 80%;
 }
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .voluntariado {
+    height: auto; 
+    padding: 40px 0.8px;
+  }
+
+  .voluntariado-content {
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+  }
+
+  .voluntariado-content .texto {
+    text-align: center;
+  }
+
+  .voluntariado-content .texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .voluntariado-content .texto p {
+    font-size: 1rem;
+  }
+
+  .voluntariado-content .imagen img {
+    max-width: 100%;
+    width: 250px; 
+    height: auto;
+    margin-top: 0;
+    transform: translateY(5px); 
+  }
+
+  /*Título e imagen voluntarios*/
+  .voluntario-form {
+    margin: 20px auto;
+  }
+
+  .voluntario-form img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  /*Formulario*/
+  .formulario {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .formulario button {
+    width: 60%;
+    margin: 20px auto 0 auto;
+  }
+
+  #mensaje-confirmacion {
+    margin: 10px auto;
+    text-align: center;
+  }
+}
+
+/*WEB RESPONSIVA PARA PANTALLAS ENTRE 769px y 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .voluntariado {
+    height: 60vh;
+    padding: 50px 8%;
+  }
+
+  .voluntariado-content {
+    flex-direction: row;
+    gap: 40px; 
+    align-items: center;
+  }
+
+  .voluntariado-content .texto h2 {
+    font-size: 2rem;
+  }
+
+  .voluntariado-content .texto p {
+    font-size: 1.1rem;
+  }
+
+  .voluntariado-content .imagen img {
+    max-width: 320px;
+    transform: translateY(20px);
+  }
+
+  /*Título e imagen voluntarios*/
+  .voluntario-form img {
+    max-width: 350px;
+  }
+
+  /*Formulario*/
+  .formulario input,
+  .formulario textarea {
+    width: 40%;
+  }
+
+  .formulario button {
+    width: 48%;
+    margin-left: auto;
+  }
+
+  #mensaje-confirmacion {
+    margin-left: auto;
+  }
+}

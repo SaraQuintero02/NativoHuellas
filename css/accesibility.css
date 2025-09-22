@@ -428,5 +428,47 @@ body.contraste-activo .procesoadopt .contenido p {
   border-radius: 5px;
 }
 
-/*CONTRASTE NOTICIAS*/
+/*CONTRASTE ESTADISTICA*/
+body.contraste-activo table {
+  background-color: #000000; 
+  color: #ffffff; 
+  border-color: #ffffff; 
+}
 
+body.contraste-activo th {
+  background-color: #000000; 
+  color: #FFD700;
+  border-color: #ffffff;
+}
+
+body.contraste-activo td {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+body.contraste-activo tr:nth-child(even) {
+  background-color: #111111;
+}
+
+body.contraste-activo tr:hover {
+  background-color: #333333;
+}
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .botones-accesibilidad button {
+    width: 27px;
+    height: 27px;
+    font-size: 8px;
+  }
+}
+
+/*WEB RESPONSIVA PARA PANATALLAS ENTRE 769px y 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .botones-accesibilidad button {
+    width: 30px;
+    height: 30px;
+    font-size: 9px;
+  }
+}

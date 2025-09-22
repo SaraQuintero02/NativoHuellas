@@ -14,9 +14,11 @@
     <header id="header">
       <nav>
         <h1><i class="fa-solid fa-paw"></i> HUELLAS SOLIDARIAS</h1>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-
+        <!--Icono del menu para celular-->
+        <input type="checkbox" id="menu-toggle"/>
+        <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+        <ul id="menu">
+          <li><a href="/index.html">Inicio</a></li>
           <!--Item Nosotros-->
           <li class="submenu">
             <a href="#" data-menu="nosotros">Nosotros <i class="fa-solid fa-caret-down"></i></a>
@@ -26,7 +28,6 @@
               <li><a href="/page/estadisticas.html">Estadísticas</a></li>
             </ul>
           </li>
-
           <!--Item Adopciones-->
           <li class="submenu">
             <a href="#" data-menu="adopciones">Adopciones <i class="fa-solid fa-caret-down"></i></a>
@@ -35,13 +36,10 @@
               <li><a href="/page/adoptables.html">Adoptables</a></li>
             </ul>
           </li>
-
           <!--Item Contacto-->
-          <li><a href="./contacto.html">Contáctanos</a></li>
-
+          <li><a href="/page/contacto.html">Contáctanos</a></li>
           <!--Item Donar-->
           <li><a href="./donar.html" class="btn-donar"><i class="fa-solid fa-heart"></i><span>DONAR</span></a></li>
-
           <!--Icono usuario-->
           <li><a href="./login.html" aria-label="Login"><i class="fa-solid fa-user"></i></a></li>
         </ul>

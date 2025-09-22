@@ -203,3 +203,158 @@ margin-bottom: 2rem;
   color: #27ae60;
   font-weight: bold;
 }
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+.hero {
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.hero .texto {
+  width: 100%;
+  text-align: center;
+  top: -120px;
+  right: 0;
+  font-size: 1rem;
+}
+
+.hero .texto h2 {
+    white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.hero .texto p {
+  font-size: 0.95rem;
+}
+
+.hero .imagen {
+  width: 80%;
+  margin-top: -70px; 
+}
+
+.hero .imagen img {
+  transform: scale(1.2) translateX(0) translateY(0);
+  max-width: 200px;
+}
+
+.metodos-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.metodo {
+  width: 70%;
+}
+
+.metodo img {
+  width: 100px;
+  height: 100px;
+}
+
+.metodo strong {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.video-donaciones {
+  width: 100%;
+  padding: 10px;
+}
+
+.video-donaciones video {
+  width: 100%;
+  height: auto;
+}
+
+.check-list {
+  max-width: 100%;
+  padding: 15px 20px;
+}
+
+.check-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+}
+
+/*WEB RESPONSIVA PARA PANATALLAS ENTRE 769px Y 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 30px 10%;
+  gap: 20px;
+  min-height: 400px;
+}
+
+.hero .texto {
+  position: absolute;
+  top: 40px;  
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
+}
+
+.hero .texto h2,
+.hero .texto p {
+  white-space: normal;
+}
+
+.hero .imagen {
+  position: relative;
+  top: 120px;
+}
+
+.hero .imagen img {
+  transform: scale(1.5) translateX(-20px) translateY(20px); 
+  max-width: 250px;
+}
+
+.metodos-container {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.metodo {
+  width: 200px;
+}
+
+.metodo img {
+  width: 120px;
+  height: 120px;
+}
+
+.metodo strong {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.video-donaciones {
+  width: 90%;
+  padding: 20px;
+}
+
+.video-donaciones video {
+  width: 100%;
+  max-width: 500px;
+}
+
+.check-list {
+  max-width: 500px;
+  padding: 20px;
+  Margin-bottom: 100px;
+}
+
+.check-list li {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+}

@@ -122,4 +122,41 @@ form input:focus {
   min-height: 1.2rem;
 }
 
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    margin: 4rem 1rem 6rem 1rem;
+  }
 
+  .Ingresar {
+    width: 80%;
+    min-height: 350px;
+    padding: 1.5rem;
+    gap: 1rem; 
+    margin-bottom: 90px; 
+  }
+
+  /*Occulta la imagen en el celular*/
+  .login-img {
+    display: none;
+  }
+
+  form input {
+    font-size: 1rem;
+  }
+
+  .btn-ingresar {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .Registro {
+    font-size: 0.85rem;
+  }
+
+  .login h2 {
+    font-size: 1.4rem;
+    margin-top: 60px; 
+  }
+}

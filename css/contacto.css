@@ -65,3 +65,96 @@ body {
   overflow: hidden; /*El mapa no sale de los bordes redondeados*/
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 5px 20px;
+    margin-top: 30px;
+  }
+
+  .contact-section h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+
+  .info-block {
+    min-width: auto;
+    text-align: center;
+  }
+
+  .info-block p,
+  .info-block a {
+    font-size: 0.9rem;
+  }
+
+  .map-container {
+    height: 300px;
+    margin-bottom: 60px;
+  }
+
+  .contact-info .info-block {
+  margin-bottom: -100px;
+  }
+
+  #footer {
+    margin-top: 90px;
+  }
+}
+
+/*WEB RESPONSIVA PARA PANATALLAS ENTRE 769px Y 1024px*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-section {
+    padding: 40px 30px;
+    margin-top: 5px;
+  }
+
+  .contact-section h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .contact-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*Dos columnas*/
+    gap: 15px 30px;
+    margin-bottom: 25px;
+  }
+
+  .info-block {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .info-block p,
+  .info-block a {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .map-container {
+    height: 400px;
+    margin-bottom: 80px;
+  }
+}
+

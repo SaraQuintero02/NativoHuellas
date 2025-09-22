@@ -39,3 +39,21 @@ body {
 .breadcrumb li:last-child::after {
   content: "";
 }
+
+/*WEB RESPONSIVA PARA CELULARES 768PX*/
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 12px; 
+    padding-left: 10px;
+    margin: 75px 0 3px 0;
+  }
+
+  .breadcrumb ol {
+    flex-wrap: wrap; 
+    gap: 4px;
+  }
+
+  .breadcrumb li::after {
+    margin-left: 3px;
+  }
+}
