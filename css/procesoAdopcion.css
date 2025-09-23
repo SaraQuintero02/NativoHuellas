@@ -125,6 +125,10 @@
   color: #333;
 }
 
+.procesoadopt  {  
+margin-bottom: 20rem;
+}
+
 /*WEB RESPONSIVA PARA CELULARES 768PX*/
 @media (max-width: 768px) {
   .hero {

@@ -99,6 +99,25 @@ select::placeholder {
   color: #ffffff;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
+.mensaje {
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.mensaje.exito {
+  color: green;
+  background-color: #e6ffe6;
+}
+
+.mensaje.error {
+  color: red;
+  background-color: #ffe6e6;
+}
+
+
 
 /*WEB RESPONSIVA PARA CELULARES 768PX*/
 @media (max-width: 768px) {
@@ -158,4 +177,5 @@ select::placeholder {
     font-size: 1rem;
     padding: 0.7rem;
   }
+  
 }

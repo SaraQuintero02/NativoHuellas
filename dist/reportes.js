@@ -21,28 +21,104 @@ async function init() {
 init();
 
 
-document.addEventListener("DOMContentLoaded", () => { //Se ejecutara cuando todo el html este listo
-  //1. Leer URL
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Asignar tipo desde URL si existe
   const params = new URLSearchParams(window.location.search);
-  const tipo = params.get("tipo");//Recupera valor del parametro
-
-  if (tipo) { //Si existe asigna el valor
+  const tipo = params.get("tipo");
+  if (tipo) {
     const selectTipo = document.getElementById("tipo");
     if (selectTipo) {
       selectTipo.value = tipo;
     }
   }
 
-  //2. Fecha automatica
-  const hoy = new Date(); 
+  // 2. Asignar fecha actual
+  const hoy = new Date();
   const year = hoy.getFullYear();
-  const month = String(hoy.getMonth() + 1).padStart(2, "0"); 
-  const day = String(hoy.getDate()).padStart(2, "0");       
-  const fechaActual = `${year}-${month}-${day}`;//Une todo el formato en yy-mm-dd
-
+  const month = String(hoy.getMonth() + 1).padStart(2, "0");
+  const day = String(hoy.getDate()).padStart(2, "0");
+  const fechaActual = `${year}-${month}-${day}`;
   const fechaInput = document.getElementById("fecha");
   if (fechaInput) {
     fechaInput.value = fechaActual;
   }
+
+  // 3. Mostrar mensajes en el DOM
+  const mensajeDiv = document.getElementById("mensaje");
+
+  function mostrarMensaje(texto, tipo) {
+    mensajeDiv.textContent = texto;
+    mensajeDiv.className = "mensaje " + tipo;
+  }
+
+  // 4. Enviar formulario
+  const form = document.querySelector(".form-reporte form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    // Capturar datos del formulario
+    const tipoTexto = document.getElementById("tipo").value;
+    const ubicacion = document.getElementById("ubicacion").value;
+    const fecha = document.getElementById("fecha").value;
+    const descripcion = document.getElementById("descripcion").value;
+
+    // Asignar ID de tipoReporte según texto
+    let tipoReporteId;
+    switch (tipoTexto) {
+      case "abandonado":
+        tipoReporteId = 1;
+        break;
+      case "maltratado":
+        tipoReporteId = 2;
+        break;
+      case "encerrado":
+        tipoReporteId = 3;
+        break;
+      default:
+        tipoReporteId = 1;
+    }
+
+    // Simular ID de usuario (deberías obtenerlo de sesión o login)
+    const usuarioId = 1;
+
+    // Crear objeto reporte
+    const reporte = {
+      reporDescripcion: descripcion,
+      reporFecha: fecha,
+      reporUbicacion: ubicacion,
+      tipoReporte: {
+        tipreporId: tipoReporteId
+      },
+      usuario: {
+        usuId: usuarioId
+      }
+    };
+
+    // Enviar al backend
+    try {
+      const response = await fetch("http://localhost:8080/reportes/report", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(reporte)
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        mostrarMensaje("Reporte enviado con éxito. ID: " + data.reporId, "exito");
+        form.reset();
+        fechaInput.value = fechaActual;
+      } else {
+        const error = await response.text();
+        mostrarMensaje("Error al enviar el reporte: " + error, "error");
+      }
+    } catch (err) {
+      console.error("Error de red:", err);
+      mostrarMensaje("No se pudo conectar con el servidor.", "error");
+    }
+  });
 });
+
+
 

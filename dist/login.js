@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const usuarios = [
     { email: "nicolperes@gmail.com", password: "123456" },
-    { email: "luisaquin@gmail.com", password: "123luisa" },
+    { email: "Luisa@gmail.com", password: "luisa123" },
     { email: "valeryospina@gmail.com", password: "os1234" },
   ];
 
