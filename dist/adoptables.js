@@ -18,20 +18,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   fetch("http://localhost:8080/animales/animal")
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       gridAdoptables.innerHTML = "";
 
-      data.forEach(animal => {
+      data.forEach((animal) => {
+        //Creación de bloque por animal
         const article = document.createElement("article");
         article.classList.add("adopt");
         article.dataset.id = animal.aniId;
         article.dataset.nombre = animal.aniNombre;
-        article.dataset.edad = `${animal.aniEdad} ${animal.aniEdad === 1 ? "año" : "años"}`;
+        article.dataset.edad = `${animal.aniEdad} ${
+          animal.aniEdad === 1 ? "año" : "años"
+        }`;
         article.dataset.historia = animal.aniDescripcion;
 
         const h3 = document.createElement("h3");
-        h3.textContent = `${animal.aniNombre} | ${animal.aniEdad} ${animal.aniEdad === 1 ? "año" : "años"}`;
+        h3.textContent = `${animal.aniNombre} | ${animal.aniEdad} ${
+          animal.aniEdad === 1 ? "año" : "años"
+        }`;
 
         const button = document.createElement("button");
         button.classList.add("info-btn");
@@ -41,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
           abrirModal(animal.aniNombre, animal.aniDescripcion);
         });
 
-        // Crear imagen si existe
+        //Crear imagen si existe
         if (animal.aniFoto) {
           const img = document.createElement("img");
           img.src = `data:image/jpeg;base64,${animal.aniFoto}`;
@@ -56,10 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
         gridAdoptables.appendChild(article);
       });
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error al cargar los animales:", error);
       gridAdoptables.innerHTML = "<p>Error al cargar los animales.</p>";
     });
-
-    
 });
